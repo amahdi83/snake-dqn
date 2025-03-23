@@ -26,6 +26,7 @@ Choose from one of three gameplay modes in `train_snake.py`:
 Play the game yourself using the arrow keys!
 ```python
 mode = "play"
+```
 
 ### 2. `"train"` 🤖 AI Training Mode
 Train the AI agent using Deep Q-Learning.
