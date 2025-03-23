@@ -47,6 +47,7 @@ mode = "test"
 Make sure you have Python 3.7+ and install the required dependencies:
 ```python
 pip install -r requirements.txt
+```
 requirements.txt:
 ```python
 numpy
