@@ -35,11 +35,15 @@ mode = "train"
 ```
 
 ### 3. `"test"` 🧪 Watch the Trained Agent
-Train the AI agent using Deep Q-Learning.
+Watch the AI agent play the game after training.
 ```python
 mode = "test"
 ```
 
+After choosing the mode, run the following line:
+```python
+python train_snake.py
+```
 ---
 
 ## 🛠️ How To
@@ -55,32 +59,12 @@ torch
 pygame
 ```
 
-## 🚀 Run the Game
-#### 1. Train the Agent:
-```python
-python train_snake.py
-```
-
-#### 2. Watch the Trained Agent:
-```python
-# Make sure mode is set to "test" in train_snake.py
-python train_snake.py
-```
-
-#### 3. Play Manually:
-```python
-# Set mode = "play"
-python train_snake.py
-```
-
 ---
 
 ## 🎓 AI Agent Overview
 The agent uses a simple feed-forward neural network with the following input features:
 ```python
-[danger_straight, danger_left, danger_right,
- food_dx, food_dy,
- dir_x, dir_y]
+[danger_straight, danger_left, danger_right, food_dx, food_dy, dir_x, dir_y]
  ```
 It gets rewarded for:
 - 🍎 Eating food: +10
@@ -88,11 +72,6 @@ It gets rewarded for:
 - 🐢 Taking too long: -10
 
 The agent uses experience replay and epsilon-greedy exploration to learn effective strategies over time.
-
----
-
-## 📸 Demo
-Check out this animation of a trained snake navigating the grid like a champ! 🐍🔥
 
 ---
 
@@ -107,6 +86,7 @@ Modify training parameters in DQNAgent like:
 - epsilon_decay
 - batch_size
 - gamma (discount rate)
+- DQN hidden layer
 
 ---
 
