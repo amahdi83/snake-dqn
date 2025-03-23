@@ -32,11 +32,13 @@ mode = "play"
 Train the AI agent using Deep Q-Learning.
 ```python
 mode = "train"
+```
 
-### 2. `"test"` 🧪 Watch the Trained Agent
+### 3. `"test"` 🧪 Watch the Trained Agent
 Train the AI agent using Deep Q-Learning.
 ```python
 mode = "test"
+```
 
 ---
 
@@ -50,21 +52,25 @@ requirements.txt:
 numpy
 torch
 pygame
+```
 
 ## 🚀 Run the Game
 #### 1. Train the Agent:
 ```python
 python train_snake.py
+```
 
 #### 2. Watch the Trained Agent:
 ```python
 # Make sure mode is set to "test" in train_snake.py
 python train_snake.py
+```
 
 #### 3. Play Manually:
 ```python
 # Set mode = "play"
 python train_snake.py
+```
 
 ---
 
@@ -74,6 +80,7 @@ The agent uses a simple feed-forward neural network with the following input fea
 [danger_straight, danger_left, danger_right,
  food_dx, food_dy,
  dir_x, dir_y]
+ ```
 It gets rewarded for:
 - 🍎 Eating food: +10
 - ❌ Hitting walls or itself: -10
